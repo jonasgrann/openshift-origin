@@ -3,3 +3,5 @@
 *.local
 *.local.json
 /.idea
+/.idea/sonarIssues.xml
+/.idea/vcs.xml

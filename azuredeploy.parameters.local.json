@@ -1,0 +1,69 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"_artifactsLocation": {
+			"value": "https://raw.githubusercontent.com/jonasgrann/openshift-origin/azurestack-release-3.9"
+		},
+		"masterVmSize": {
+			"value": "Standard_DS1_v2"
+		},
+		"infraVmSize": {
+			"value": "Standard_DS1_v2"
+		},
+		"nodeVmSize": {
+			"value": "Standard_DS1_v2"
+		},
+		"storageKind": {
+			"value": "unmanaged"
+		},
+		"openshiftClusterPrefix": {
+			"value": "STILKOF"
+		},
+		"masterInstanceCount": {
+			"value": 3
+		},
+		"infraInstanceCount": {
+			"value": 2
+		},
+		"nodeInstanceCount": {
+			"value": 2
+		},
+		"dataDiskSize": {
+			"value": 128
+		},
+		"adminUsername": {
+			"value": "STILKOFAPP"
+		},
+		"openshiftPassword": {
+			"value": "ff17rxCN6Ak5BmX6FqnQ"
+		},
+		"enableMetrics": {
+			"value": "false"
+		},
+		"enableLogging": {
+			"value": "false"
+		},
+		"sshPublicKey": {
+			"value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAjisIqpQPAt4HngI40oc4VCag8dgLeDg1RBmJmlPUNQtH9ruh/czwAYAdWjqXP4UKqQ/Dacny1fv5o1E4rZvysmzcY4S7f6cI0AlHMm/T7fWun4NrNszcWp4g9oe31MlgTp5mRzFdyvhqp79ZAmov1Opm0UxWpn9yJPMu5d6wk4b32UxsU6cg7OTwkRO3Et4jhS85ixkdY6bgnTt/YlFAFSnoMlGjcN/tBqLmDnyzL+cSgNqrhMkWR/sGzcTgHJAofMWYm4p7DRZCG+WZdQtT4F8ffC9ILIKwbP+1F7bYlIHqf8Mfg7fLYinbdocY0ICsMNd32ZhTfZQ7VMuTvvLVTw== azure-openshift-deploy"
+		},
+		"keyVaultResourceGroup": {
+			"value": "STILKOF"
+		},
+		"keyVaultName": {
+			"value": "STILKOFVault"
+		},
+		"keyVaultSecret": {
+			"value": "OpenShift"
+		},
+		"enableAzure": {
+			"value": "false"
+		},
+		"defaultSubDomainType": {
+			"value": "nipio"
+		},
+		"defaultSubDomain": {
+			"value": "changeme"
+		}
+	}
+}
